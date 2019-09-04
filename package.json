@@ -1,0 +1,10 @@
+{
+"scripts":{
+    "start": "docker-compose -p tcc up",
+    "build": "docker-compose -p tcc build",
+    "stop": "docker-composes -p tcc stop",
+    "clean": "docker system prune -af",
+    "clean:volumes": "docker volume prune -f",
+    "seed": "docker exec -it prisma npm run seed"
+}
+}
