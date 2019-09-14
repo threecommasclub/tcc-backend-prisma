@@ -2,6 +2,14 @@ import Photon from '@generated/photon'
 const photon = new Photon()
 
 async function main() {
+  const post1 = await photon.posts.create({
+    data: {
+      title: 'sample title',
+      content: 'sample content',
+      published: true,
+    }
+  })
+
   const user1 = await photon.users.create({
     data: {
       email: 'alice@prisma.io',
