@@ -30,6 +30,7 @@ export interface NexusGenRootTypes {
     token: string; // String!
     user: NexusGenRootTypes['User']; // User!
   }
+  Company: photon.Company;
   Mutation: {};
   Post: photon.Post;
   Query: {};
@@ -49,6 +50,29 @@ export interface NexusGenFieldTypes {
   AuthPayload: { // field return type
     token: string; // String!
     user: NexusGenRootTypes['User']; // User!
+  }
+  Company: { // field return type
+    address: string; // String!
+    city: string; // String!
+    country: string; // String!
+    createdAt: any; // DateTime!
+    description: string; // String!
+    email: string; // String!
+    facebook: string; // String!
+    founded: string; // String!
+    full_address: string; // String!
+    id: string; // ID!
+    industry: string; // String!
+    linkedin: string; // String!
+    location: string; // String!
+    logo: string; // String!
+    name: string; // String!
+    province: string; // String!
+    size: string; // String!
+    title: string; // String!
+    updatedAt: any; // DateTime!
+    website: string; // String!
+    zipcode: string; // String!
   }
   Mutation: { // field return type
     createDraft: NexusGenRootTypes['Post']; // Post!
@@ -124,7 +148,7 @@ export interface NexusGenAbstractResolveReturnTypes {
 
 export interface NexusGenInheritedFields {}
 
-export type NexusGenObjectNames = "AuthPayload" | "Mutation" | "Post" | "Query" | "User";
+export type NexusGenObjectNames = "AuthPayload" | "Company" | "Mutation" | "Post" | "Query" | "User";
 
 export type NexusGenInputNames = never;
 

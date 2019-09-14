@@ -7,6 +7,30 @@ type AuthPayload {
   user: User!
 }
 
+type Company {
+  address: String!
+  city: String!
+  country: String!
+  createdAt: DateTime!
+  description: String!
+  email: String!
+  facebook: String!
+  founded: String!
+  full_address: String!
+  id: ID!
+  industry: String!
+  linkedin: String!
+  location: String!
+  logo: String!
+  name: String!
+  province: String!
+  size: String!
+  title: String!
+  updatedAt: DateTime!
+  website: String!
+  zipcode: String!
+}
+
 """DateTime"""
 scalar DateTime
 
